@@ -1,0 +1,68 @@
+# Here defines the parameters for each algorithm and dataset.
+# These parameters are not the same as the parameters used in the paper
+parameterMap = {
+    "ZIN": {
+        "house_price": {  # 默认参数 不想每列都写的就改默认值
+            "l2_regularizer_weight": 0.001,
+            "irm_type": "infer_irmv1_multi_class",
+            "dataset": "house_price",
+            "n_restarts": 1,
+            "seed": 1,
+            "hidden_dim_infer": 64,
+            "hidden_dim": 32,
+            "penalty_weight_anneal": 10,
+            "lr": 0.005,
+            "lr2": 0.0001,
+            "penalty_anneal_iters": 5000,
+            "steps": 1,
+        },
+    },
+    "IRMV1": {
+        "house_price": {  # 默认参数 不想每列都写的就改默认值
+            "l2_regularizer_weight": 0.001,
+            "irm_type": "irmv1_multi_class",
+            "dataset": "house_price",
+            "n_restarts": 1,
+            "seed": 1,
+            "hidden_dim_infer": 64,
+            "hidden_dim": 32,
+            "penalty_weight_anneal": 2000,
+            "lr": 0.004,
+            "lr2": 0.01,
+            "penalty_anneal_iters": 2000,
+            "steps": 1,
+        },
+    },
+    "IRM-TV-L1": {
+        "house_price": {  # 默认参数 不想每列都写的就改默认值
+            "l2_regularizer_weight": 0.001,
+            "irm_type": "irmv1_multi_class_tvl1",
+            "dataset": "house_price",
+            "n_restarts": 1,
+            "seed": 1,
+            "hidden_dim_infer": 64,
+            "hidden_dim": 32,
+            "penalty_weight_anneal": 2,
+            "lr": 0.0005,
+            "lr2": 0.0001,
+            "penalty_anneal_iters": 5000,
+            "steps": 1,
+        },
+    },
+    "ZIN-TV-L1": {
+        "house_price": {  # 默认参数 不想每列都写的就改默认值
+            "l2_regularizer_weight": 0.001,
+            "irm_type": "infer_irmv1_multi_class_tvl1",
+            "dataset": "house_price",
+            "n_restarts": 1,
+            "seed": 1,
+            "hidden_dim_infer": 64,
+            "hidden_dim": 32,
+            "penalty_weight_anneal": 2,
+            "lr": 0.004,
+            "lr2": 0.0001,
+            "penalty_anneal_iters": 2000,
+            "steps": 1,
+        },
+    },
+}
