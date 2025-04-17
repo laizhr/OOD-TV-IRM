@@ -11,3 +11,5 @@ Yong Lin, Shengyu Zhu, Lu Tan, and Peng Cui, "ZIN: When and How to Learn Invaria
 Zhao-Rong Lai, Weiwen Wang, "Invariant Risk Minimization Is A Total Variation Model", the 41st International Conference on Machine Learning (ICML, main track), 2024.
 
 For any usage of these functions, the above papers should be cited as references.
+
+Each directory corresponds to a method for a specific experiment. Please choose a directory, download the corresponding data sets, and then run the experiment.
